@@ -1,0 +1,28 @@
+body{
+	overflow-x: hidden;
+}
+
+.container{
+  margin-top: 10px;
+  padding-top: 100px;
+}
+
+
+.curriculum-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 40%;
+}
+
+.img-transition {
+  transition: transform 0.5s ease;
+}
+
+.img-transition:hover {
+  transform: scale(1.1);
+}

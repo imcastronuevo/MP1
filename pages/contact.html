@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>School Website</title>
+</head>
+<body style="background-color: aliceblue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+
+	<!-- nav start -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+		<div class="container-fluid">
+			<a href="/index.html"><img src="../images/home/sbcslogo.jpg" alt="Logo" width="35" height="35" class="d-inline-block align-text-top rounded-circle"></a>
+			<a class="navbar-brand ps-2 d-none d-sm-block text-light" href="/index.html" style="font-size: medium;"> St. Blaise Christian School Inc.</a>
+			<button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<a class="nav-link active" aria-current="page" href="/index.html" style="font-size: medium;">Home</a>
+					<a class="nav-link active" aria-current="page" href="../pages/about.html" style="font-size: medium;">About</a>
+					<a class="nav-link active" aria-current="page" href="../pages/curriculum.html" style="font-size: medium;">Curriculum</a>
+					<a class="nav-link active" aria-current="page" href="../pages/contact.html" style="font-size: medium;">Contact</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- nav end -->
+
+	<!-- image header start -->
+<div class="container-item">
+  <div class="img-fluid position-relative">
+    <img src="../images/facilities/computerRoom2.jpg" class="d-flex w-100 h-25" alt="bass guitar" style="opacity: .8;">
+  </div>
+</div>
+<!-- image header end -->
+
+	<!-- contact start -->
+	<div class="container-fluid">
+		<div class="row d-flex my-5">
+				<div class="col-md-6 col-sm-12 col-xs-12 bg-body-tertiary text-light p-4">
+					<h5 class="fw-bold">Location</h5>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12892.966302629102!2d120.38394795027226!3d16.112033150001043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391692c3335d7ed%3A0x6758e8c2e6b07dfb!2sSt.%20Blaise%20Christian%20School!5e0!3m2!1sen!2sph!4v1703165835821!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 bg-dark-subtle p-5" style="height: 500px;">
+					<form onsubmit="return validateForm()" name="scheduleForm" action="/submit-form" method="post">
+						<fieldset>
+							<legend>Send Us A Message</legend>							
+							<div class="form-group mt-2">
+								<label for="fullname">Full Name:</label>
+								<input class="form-control" placeholder="Full Name" type="text" name="fullname" id="fullname" autocomplete="name" required>
+							</div>					
+							<div class="form-group mt-3">
+								<label for="emailadd">Email:</label>
+								<input class="form-control" placeholder="example@email.com" type="email" name="emailadd" id="emailadd" autocomplete="email" required>
+							</div>					
+							<div class="form-group mt-3">
+								<label for="mobile_number">Mobile/Phone Number:</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text" id="basic-addon1">+63</span>
+									</div>
+									<input class="form-control" placeholder="123-456-7890" type="tel" name="mobileNumber" id="mobile_number" autocomplete="tel" required>
+								</div>
+							</div>
+								<div class="form-group mt-3">
+									<label for="message">Message:</label>
+									<textarea class="form-control" placeholder="Your message here..." name="message" id="message" rows="4" required></textarea>
+								</div>
+								<button class="btn bg-dark text-light px-2 my-3" type="submit">Send</button>
+						</fieldset>
+					</form>
+				</div>
+		</div>
+	</div>
+	<!--contact end  -->
+
+	<!-- footer start -->
+	<div class="container-footer bg-body-tertiary">
+		<footer class="p-3">
+			<ul class="nav justify-content-center mt-3">
+				<li class="nav-item"><a href="/index.html" class="nav-link px-2 text-light">Home</a></li>
+				<li class="nav-item"><a href="../pages/about.html" class="nav-link px-2 text-light">About</a></li>
+				<li class="nav-item"><a href="../pages/curriculum.html" class="nav-link px-2 text-light">Curriculum</a></li>
+				<li class="nav-item"><a href="../pages/contact.html" class="nav-link px-2 text-light">Contact</a></li>
+			</ul>
+			<p class="text-center text-light">© St. Blaise Christian School Inc. 2023</p>
+		</footer>
+	</div>
+	<!-- footer end -->
+	
+	<script src="../js/bootstrap.js"></script>
+</body>
+</html>
