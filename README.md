@@ -1,4 +1,4 @@
-# School Website
+# School Website - Mini Project 1
 
 A simple school website showcasing basic pages for home, about, curriculum, and contact. Built with HTML, CSS, and Bootstrap 5.
 
